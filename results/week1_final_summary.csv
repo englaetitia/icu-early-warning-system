@@ -1,0 +1,2 @@
+Project,Week,Best Balanced Model,Best Recall Model,Best Balanced Accuracy,Best Balanced Precision,Best Balanced Recall,Best Balanced F1-score,Best Balanced ROC-AUC,Main Clinical Goal,Next Phase
+ICU Early Warning Prediction System,Week 1,Gradient Boosting + SMOTE,Optimized Threshold Random Forest + SMOTE,0.8,0.33,0.67,0.44,0.76,Improve septic patient detection and reduce false negatives,"Explainability, risk scoring, model persistence, and dashboard development"
