@@ -1,0 +1,11 @@
+Patient_ID,True_Sepsis_Label,Predicted_Sepsis_Label,Sepsis_Probability,Risk_Score_Percent,Risk_Category,Clinical_Alert,Top_Risk_Features
+p000001,0,0,0.0012298665225789678,0.12298665225789678,Low Risk,Routine monitoring recommended.,"['HR_min', 'MAP_mean', 'SBP_mean']"
+p000002,0,0,0.006569138696591917,0.6569138696591917,Low Risk,Routine monitoring recommended.,"['ICULOS_max', 'MAP_mean', 'HR_mean']"
+p000003,0,0,0.03649337113681834,3.6493371136818338,Low Risk,Routine monitoring recommended.,"['Temp_mean', 'SBP_mean', 'HR_mean']"
+p000004,0,0,0.002996681782448489,0.2996681782448489,Low Risk,Routine monitoring recommended.,"['HR_min', 'ICULOS_max', 'Age_first']"
+p000005,0,0,0.0008458881347865957,0.08458881347865957,Low Risk,Routine monitoring recommended.,"['Temp_mean', 'SBP_mean', 'HR_mean']"
+p000006,0,0,0.0011541318761797911,0.11541318761797911,Low Risk,Routine monitoring recommended.,"['Temp_max', 'HR_min', 'SBP_mean']"
+p000007,0,0,0.0004084384904074639,0.04084384904074639,Low Risk,Routine monitoring recommended.,"['Temp_mean', 'HR_min', 'MAP_mean']"
+p000008,0,0,0.00015664714429043132,0.01566471442904313,Low Risk,Routine monitoring recommended.,"['MAP_mean', 'HR_mean', 'O2Sat_min']"
+p000009,1,1,0.9992555868880398,99.92555868880399,Critical Risk,Urgent clinical review recommended due to critical sepsis risk.,"['ICULOS_max', 'Temp_mean', 'HR_min']"
+p000010,0,0,0.0017609730554039907,0.17609730554039907,Low Risk,Routine monitoring recommended.,"['ICULOS_max', 'Age_first', 'HR_mean']"
