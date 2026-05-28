@@ -1,0 +1,8 @@
+Metric,Value
+Total Patients,100.0
+True Sepsis Cases,14.0
+Predicted Sepsis Cases,17.0
+High or Critical Risk Patients,17.0
+Average Risk Score (%),17.69
+Maximum Risk Score (%),99.94
+Minimum Risk Score (%),0.01

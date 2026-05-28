@@ -1,0 +1,101 @@
+Patient_ID,Risk_Score_Percent,Risk_Category,Clinical_Alert_Level,Predicted_Sepsis_Label
+p000053,99.94267441192052,Critical Risk,Urgent Clinical Review,1
+p000042,99.93215384647625,Critical Risk,Urgent Clinical Review,1
+p000028,99.92614219007237,Critical Risk,Urgent Clinical Review,1
+p000009,99.92555868880399,Critical Risk,Urgent Clinical Review,1
+p000018,99.88523538708236,Critical Risk,Urgent Clinical Review,1
+p000034,99.881972779012,Critical Risk,Urgent Clinical Review,1
+p000056,99.87901290555034,Critical Risk,Urgent Clinical Review,1
+p000015,99.86491537017697,Critical Risk,Urgent Clinical Review,1
+p000058,99.84065907949517,Critical Risk,Urgent Clinical Review,1
+p000011,99.75578892376495,Critical Risk,Urgent Clinical Review,1
+p000022,99.38636142290294,Critical Risk,Urgent Clinical Review,1
+p000066,98.19668843186598,Critical Risk,Urgent Clinical Review,1
+p000089,96.05231967475234,Critical Risk,Urgent Clinical Review,1
+p000060,92.03209033568731,Critical Risk,Urgent Clinical Review,1
+p000026,87.83205087211212,Critical Risk,Urgent Clinical Review,1
+p000078,78.88348753294848,Critical Risk,Urgent Clinical Review,1
+p000064,76.17288719792921,Critical Risk,Urgent Clinical Review,1
+p000040,46.67915682608391,Moderate Risk,Increased Monitoring,0
+p000027,33.5861120633239,Moderate Risk,Increased Monitoring,0
+p000065,22.395289565460445,Low Risk,Routine Monitoring,0
+p000086,13.179550258480216,Low Risk,Routine Monitoring,0
+p000063,4.934412721760715,Low Risk,Routine Monitoring,0
+p000071,3.7460671776565078,Low Risk,Routine Monitoring,0
+p000003,3.6493371136818338,Low Risk,Routine Monitoring,0
+p000074,1.2038290267677816,Low Risk,Routine Monitoring,0
+p000002,0.6569138696591917,Low Risk,Routine Monitoring,0
+p000080,0.638321643436678,Low Risk,Routine Monitoring,0
+p000091,0.5474346902378204,Low Risk,Routine Monitoring,0
+p000083,0.527647854551109,Low Risk,Routine Monitoring,0
+p000021,0.49672431366081543,Low Risk,Routine Monitoring,0
+p000023,0.4922003952753536,Low Risk,Routine Monitoring,0
+p000088,0.40842512218520566,Low Risk,Routine Monitoring,0
+p000067,0.38812678707217146,Low Risk,Routine Monitoring,0
+p000084,0.3874446767328105,Low Risk,Routine Monitoring,0
+p000024,0.3798716859840019,Low Risk,Routine Monitoring,0
+p000048,0.3754223342468227,Low Risk,Routine Monitoring,0
+p000081,0.34960352039849296,Low Risk,Routine Monitoring,0
+p000031,0.3295840441914197,Low Risk,Routine Monitoring,0
+p000004,0.2996681782448489,Low Risk,Routine Monitoring,0
+p000033,0.2748562841694509,Low Risk,Routine Monitoring,0
+p000094,0.2738249875682467,Low Risk,Routine Monitoring,0
+p000093,0.25421029954164454,Low Risk,Routine Monitoring,0
+p000076,0.24607200295693757,Low Risk,Routine Monitoring,0
+p000036,0.23652957344253733,Low Risk,Routine Monitoring,0
+p000077,0.23306835839150453,Low Risk,Routine Monitoring,0
+p000013,0.22910017963608545,Low Risk,Routine Monitoring,0
+p000095,0.22010247224408774,Low Risk,Routine Monitoring,0
+p000020,0.2174176721052753,Low Risk,Routine Monitoring,0
+p000014,0.19908092577924724,Low Risk,Routine Monitoring,0
+p000079,0.19648609552509907,Low Risk,Routine Monitoring,0
+p000100,0.19520437761146106,Low Risk,Routine Monitoring,0
+p000010,0.17609730554039907,Low Risk,Routine Monitoring,0
+p000055,0.1652160444954584,Low Risk,Routine Monitoring,0
+p000016,0.16023710687400888,Low Risk,Routine Monitoring,0
+p000097,0.14222693196369066,Low Risk,Routine Monitoring,0
+p000061,0.1415539444899733,Low Risk,Routine Monitoring,0
+p000038,0.1359140576197534,Low Risk,Routine Monitoring,0
+p000037,0.13141335171413154,Low Risk,Routine Monitoring,0
+p000043,0.13016222834958327,Low Risk,Routine Monitoring,0
+p000029,0.1276701493909532,Low Risk,Routine Monitoring,0
+p000069,0.12334768445072146,Low Risk,Routine Monitoring,0
+p000001,0.12298665225789678,Low Risk,Routine Monitoring,0
+p000068,0.11812981184090507,Low Risk,Routine Monitoring,0
+p000096,0.117424738244181,Low Risk,Routine Monitoring,0
+p000012,0.11607872274035673,Low Risk,Routine Monitoring,0
+p000006,0.11541318761797911,Low Risk,Routine Monitoring,0
+p000092,0.1065396834251129,Low Risk,Routine Monitoring,0
+p000062,0.10502589693762317,Low Risk,Routine Monitoring,0
+p000054,0.08947246917750125,Low Risk,Routine Monitoring,0
+p000085,0.08742487635373379,Low Risk,Routine Monitoring,0
+p000005,0.08458881347865957,Low Risk,Routine Monitoring,0
+p000073,0.0758636217429624,Low Risk,Routine Monitoring,0
+p000047,0.06933541945139829,Low Risk,Routine Monitoring,0
+p000072,0.06856446204522995,Low Risk,Routine Monitoring,0
+p000087,0.0678963392295436,Low Risk,Routine Monitoring,0
+p000059,0.0634982247682431,Low Risk,Routine Monitoring,0
+p000099,0.061250276586688295,Low Risk,Routine Monitoring,0
+p000050,0.053924500112594885,Low Risk,Routine Monitoring,0
+p000045,0.04901893927668693,Low Risk,Routine Monitoring,0
+p000007,0.04084384904074639,Low Risk,Routine Monitoring,0
+p000082,0.03813979397296099,Low Risk,Routine Monitoring,0
+p000044,0.03757993518771207,Low Risk,Routine Monitoring,0
+p000019,0.03600275932027038,Low Risk,Routine Monitoring,0
+p000057,0.035995575574858614,Low Risk,Routine Monitoring,0
+p000017,0.03400709262079336,Low Risk,Routine Monitoring,0
+p000075,0.029155979502179036,Low Risk,Routine Monitoring,0
+p000046,0.027870321890719495,Low Risk,Routine Monitoring,0
+p000049,0.02675405533857684,Low Risk,Routine Monitoring,0
+p000039,0.02614317813043886,Low Risk,Routine Monitoring,0
+p000035,0.02519141531649724,Low Risk,Routine Monitoring,0
+p000098,0.02481355543594827,Low Risk,Routine Monitoring,0
+p000025,0.024474308129446346,Low Risk,Routine Monitoring,0
+p000052,0.024474308129446346,Low Risk,Routine Monitoring,0
+p000030,0.023014620594846574,Low Risk,Routine Monitoring,0
+p000041,0.022130149468187726,Low Risk,Routine Monitoring,0
+p000090,0.020911502727649207,Low Risk,Routine Monitoring,0
+p000008,0.01566471442904313,Low Risk,Routine Monitoring,0
+p000032,0.014366800595809715,Low Risk,Routine Monitoring,0
+p000070,0.012231265979668988,Low Risk,Routine Monitoring,0
+p000051,0.009246624729896381,Low Risk,Routine Monitoring,0
