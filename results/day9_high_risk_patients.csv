@@ -1,0 +1,7 @@
+Patient_ID,True_Sepsis_Label,Predicted_Sepsis_Label,Sepsis_Probability,Risk_Score_Percent,Risk_Category,Clinical_Alert_Level
+p000066,0,1,0.9819668843186597,98.19668843186598,Critical Risk,Urgent Clinical Review
+p000089,0,1,0.9605231967475234,96.05231967475234,Critical Risk,Urgent Clinical Review
+p000060,0,1,0.9203209033568731,92.03209033568731,Critical Risk,Urgent Clinical Review
+p000026,0,1,0.8783205087211212,87.83205087211212,Critical Risk,Urgent Clinical Review
+p000078,1,1,0.7888348753294848,78.88348753294848,Critical Risk,Urgent Clinical Review
+p000064,1,1,0.7617288719792921,76.17288719792921,Critical Risk,Urgent Clinical Review
