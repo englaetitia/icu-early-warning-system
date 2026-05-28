@@ -1,0 +1,11 @@
+Deployment Component,Status
+Processed patient-level dataset,Completed
+Trained final model,Completed
+Saved model file,Completed
+Saved feature names,Completed
+Saved model metadata,Completed
+Risk scoring logic,Completed
+Single-patient prediction function,Completed
+Explainability with SHAP,Completed
+Dashboard-ready CSV files,Completed
+API or dashboard interface,Not yet completed

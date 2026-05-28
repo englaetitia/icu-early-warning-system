@@ -1,0 +1,8 @@
+Week 3 Goal,Purpose
+Build simple Streamlit dashboard,Create an interactive interface
+Display patient risk table,Allow users to inspect patient-level risks
+Show summary risk metrics,Summarize ICU risk status
+Add patient search or selection,Make dashboard easier to navigate
+Display individual patient prediction,Show risk score and alert level for one patient
+Add SHAP explanation view,Explain why a patient was flagged
+Prepare project for demo,Move closer to portfolio-ready deployment

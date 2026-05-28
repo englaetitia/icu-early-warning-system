@@ -1,0 +1,8 @@
+Category,Files Created
+Explainability,"SHAP plots, SHAP feature importance CSV"
+Risk Scoring,"Patient-level risk scores, high-risk patient table"
+Model Persistence,"Saved model, feature names, model metadata"
+Single Patient Prediction,Single-patient prediction CSVs
+Explainable Prediction,Patient SHAP explanation and explainable prediction files
+Dashboard Preparation,"Dashboard patient predictions, summary metrics, risk distribution"
+Final Review,Deployment readiness checklist
