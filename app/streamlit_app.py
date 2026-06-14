@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from pathlib import Path
 
 from config import *
 from utils import load_csv, get_metric_value
@@ -16,7 +17,9 @@ summary_metrics = load_csv("dashboard_summary_metrics.csv")
 risk_distribution = load_csv("dashboard_risk_distribution.csv")
 patient_predictions = load_csv("dashboard_patient_predictions.csv")
 
-
+BASE_DIR = Path(__file__).resolve().parent.parent
+SHAP_DIR = BASE_DIR / "figures" / "day8"
+DAY12_SHAP_DIR = BASE_DIR / "figures" / "day12"
 st.title("🚑 ICU Early Warning Prediction System")
 
 st.markdown(APP_SUBTITLE)
@@ -191,10 +194,101 @@ elif page == "Risk Analytics":
 
 elif page == "Explainability":
 
-    st.header("Explainability")
+    st.header("Explainability Dashboard")
 
-    st.write("This section will display SHAP explainability outputs.")
+    st.write(
+        """
+        This section provides model explainability using SHAP.
 
+        SHAP helps explain how each physiological variable contributed to the model prediction.
+        """
+    )
+
+    st.divider()
+
+    st.subheader("Global Model Explainability")
+
+    st.write(
+        """
+        The SHAP summary plot shows how physiological features influence model predictions across ICU patients.
+        """
+    )
+
+    shap_summary_path = SHAP_DIR / SHAP_SUMMARY_IMAGE
+
+    if shap_summary_path.exists():
+        st.image(
+            str(shap_summary_path),
+            caption="SHAP Summary Plot",
+            use_container_width=True
+        )
+    else:
+        st.warning("SHAP summary plot not found.")
+
+    st.divider()
+
+    st.subheader("Global Feature Importance")
+
+    shap_bar_path = SHAP_DIR / SHAP_BAR_IMAGE
+
+    if shap_bar_path.exists():
+        st.image(
+            str(shap_bar_path),
+            caption="SHAP Feature Importance",
+            use_container_width=True
+        )
+    else:
+        st.warning("SHAP bar plot not found.")
+
+    st.divider()
+
+    st.subheader("Patient-Level SHAP Explanation")
+
+    st.write(
+        """
+        The waterfall plot explains how individual features increased or decreased a patient's predicted sepsis risk.
+        """
+    )
+
+    patient_waterfall_path = SHAP_DIR / PATIENT_WATERFALL_IMAGE
+
+    if patient_waterfall_path.exists():
+        st.image(
+            str(patient_waterfall_path),
+            caption="Patient-Level SHAP Waterfall Plot",
+            use_container_width=True
+        )
+    else:
+        st.warning("Patient-level SHAP waterfall plot not found.")
+
+    st.divider()
+
+    st.subheader("Explainable Prediction Example")
+
+    day12_waterfall_path = DAY12_SHAP_DIR / DAY12_WATERFALL_IMAGE
+
+    if day12_waterfall_path.exists():
+        st.image(
+            str(day12_waterfall_path),
+            caption="Explainable Patient Prediction Waterfall",
+            use_container_width=True
+        )
+    else:
+        st.warning("Day 12 SHAP waterfall plot not found.")
+
+    st.divider()
+
+    st.subheader("Clinical Interpretation")
+
+    st.info(
+        """
+        SHAP explanations improve transparency by showing which patient features influenced the prediction.
+
+        Features with positive SHAP values increase predicted sepsis risk, while features with negative SHAP values reduce predicted risk.
+
+        This supports explainable clinical AI by helping clinicians understand why a patient may be classified as low-risk, moderate-risk, or critical-risk.
+        """
+    )
 
 elif page == "System Information":
 
