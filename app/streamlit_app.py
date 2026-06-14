@@ -87,7 +87,38 @@ elif page == "Patient Monitoring":
 
     st.header("Patient Monitoring")
 
-    st.write("This section will display ICU patient-level risk predictions.")
+    st.subheader("All ICU Patients")
+
+    st.dataframe(
+        patient_predictions,
+        use_container_width=True
+    )
+
+    st.divider()
+
+    st.subheader("Top 10 Highest-Risk Patients")
+
+    st.dataframe(
+        load_csv("dashboard_top_10_high_risk_patients.csv"),
+        use_container_width=True
+    )
+
+    st.divider()
+
+    high_risk_patients = patient_predictions[
+        patient_predictions["Risk_Category"].isin(
+            ["High Risk", "Critical Risk"]
+        )
+    ]
+
+    st.subheader(
+        f"High/Critical Risk Patients ({len(high_risk_patients)})"
+    )
+
+    st.dataframe(
+        high_risk_patients,
+        use_container_width=True
+    )
 
 
 elif page == "Risk Analytics":
