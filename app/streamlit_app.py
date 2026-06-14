@@ -87,10 +87,45 @@ elif page == "Patient Monitoring":
 
     st.header("Patient Monitoring")
 
-    st.subheader("All ICU Patients")
+    patient_data = patient_predictions.copy()
+
+    st.subheader("Patient Search")
+
+    patient_ids = patient_data["Patient_ID"].astype(str).unique()
+
+    selected_patient = st.selectbox(
+        "Search by Patient ID",
+        options=["All Patients"] + sorted(patient_ids.tolist())
+    )
+
+    if selected_patient != "All Patients":
+
+        patient_data = patient_data[
+            patient_data["Patient_ID"].astype(str) == selected_patient
+        ]
+
+    st.subheader("Risk Category Filter")
+
+    risk_options = patient_predictions["Risk_Category"].unique()
+
+    selected_risks = st.multiselect(
+        "Select Risk Categories",
+        options=risk_options,
+        default=risk_options
+    )
+
+    patient_data = patient_data[
+        patient_data["Risk_Category"].isin(selected_risks)
+    ]
+
+    st.divider()
+
+    st.subheader(
+        f"Filtered Patients ({len(patient_data)})"
+    )
 
     st.dataframe(
-        patient_predictions,
+        patient_data,
         use_container_width=True
     )
 
@@ -100,23 +135,6 @@ elif page == "Patient Monitoring":
 
     st.dataframe(
         load_csv("dashboard_top_10_high_risk_patients.csv"),
-        use_container_width=True
-    )
-
-    st.divider()
-
-    high_risk_patients = patient_predictions[
-        patient_predictions["Risk_Category"].isin(
-            ["High Risk", "Critical Risk"]
-        )
-    ]
-
-    st.subheader(
-        f"High/Critical Risk Patients ({len(high_risk_patients)})"
-    )
-
-    st.dataframe(
-        high_risk_patients,
         use_container_width=True
     )
 
