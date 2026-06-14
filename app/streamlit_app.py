@@ -141,9 +141,52 @@ elif page == "Patient Monitoring":
 
 elif page == "Risk Analytics":
 
-    st.header("Risk Analytics")
+    st.header("Single Patient Dashboard")
 
-    st.write("This section will display ICU risk distribution and summary metrics.")
+    patient_ids = patient_predictions["Patient_ID"].astype(str)
+
+    selected_patient_id = st.selectbox(
+        "Select Patient",
+        sorted(patient_ids.tolist())
+    )
+
+    patient = patient_predictions[
+        patient_predictions["Patient_ID"].astype(str)
+        == selected_patient_id
+    ].iloc[0]
+
+    st.subheader(f"Patient: {selected_patient_id}")
+
+    col1, col2, col3, col4 = st.columns(4)
+
+    col1.metric(
+        "Risk Score",
+        f"{patient['Risk_Score_Percent']:.2f}%"
+    )
+
+    col2.metric(
+        "Sepsis Probability",
+        f"{patient['Sepsis_Probability']:.3f}"
+    )
+
+    col3.metric(
+        "Risk Category",
+        patient["Risk_Category"]
+    )
+
+    col4.metric(
+        "Clinical Alert",
+        patient["Clinical_Alert_Level"]
+    )
+
+    st.divider()
+
+    st.subheader("Patient Details")
+
+    st.dataframe(
+        patient.to_frame().T,
+        use_container_width=True
+    )
 
 
 elif page == "Explainability":
